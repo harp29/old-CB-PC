@@ -1,0 +1,37 @@
+
+//== FONTS ==
+@import url('https://fonts.googleapis.com/css?family=Cormorant:100,200,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,700');
+
+
+$headline-font:'Cormorant', serif;
+$text-font:'Lato', sans-serif;
+
+$color-primary:#fff;
+$color-secondary:#bcbec0;
+$color-ternary:#414042;
+$offset-color:#96c233;
+$background-color:#000;
+
+//== THEMES ==
+//Allowed: dark, med-dark ,light
+// $theme: Default;
+
+
+//== PADDING ==
+$padding-large:150px;
+$padding-top:125px;
+$padding-medium:80px;
+$padding-small:50px;
+$padding-tiny:10px;
+
+//== MARGIN ==
+$margin-bottom-large:110px;
+$margin-ninety:90px;
+$margin-bottom-medium:75px;
+$margin-bottom-med-small:50px;
+$margin-bottom-small:40px;
+$margin-bottom-xs:5px;
+
+//== IMAGE ==
+$path--rel: "../img";

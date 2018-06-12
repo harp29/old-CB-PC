@@ -1,0 +1,30 @@
+.navigation-holder{
+  position:relative;
+  top:0%;
+  opacity:0;
+  ul{
+    float:right;
+  }
+
+  li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left:40px;
+
+    a{
+      @include nav-links;
+    }
+  }
+
+  .active-link{
+    @include active-link;
+    transition:all 3s ease-in-out;
+  }
+
+}
+
+.logo{
+  height:55px;
+  width:auto;
+  float:left;
+}

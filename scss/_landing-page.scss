@@ -1,0 +1,45 @@
+#landing-page{
+  position:relative;
+  height:100vh;
+  width:100%;
+  padding:$padding-small 0px;
+}
+
+.wrapper{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height:100%;
+   width:100%;
+   opacity:0;
+   @include background-image("landingPage2.jpeg", center, cover,$color-ternary);
+   transform:scale(1.2);
+}
+
+.heading-caption{
+  line-height: 178% !important;
+  opacity:0;
+}
+
+
+#landing-page-cta .box-1 {
+  @include svgBox;
+}
+
+#landing-page-cta .box-1 rect {
+    @include svgRect;
+    stroke-dasharray:517px;
+    stroke-dashoffset:517px;
+    opacity:0;
+}
+
+#landing-page-cta .box-2 {
+  @include svgBox;
+}
+
+#landing-page-cta .box-2 rect {
+  @include svgRect;
+  stroke-dasharray:517px;
+  stroke-dashoffset:-517px;
+  opacity:0;
+}

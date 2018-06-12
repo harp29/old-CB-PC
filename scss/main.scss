@@ -1,0 +1,247 @@
+// @import "normalize";
+@import 'variables';
+@import 'mixins';
+@import 'loading-page';
+@import 'navigation';
+@import 'landing-page';
+@import 'about-page';
+@import 'areasOfPractice';
+@import 'team';
+@import 'contact-page';
+
+body
+{
+    @include body-settings;
+    @include xlarge-4k-screen
+    {
+        font-size: 350%;
+    }
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color:$color-secondary;
+  &:hover,&:active{
+    text-decoration: none;
+    color:currentColor;
+  }
+}
+
+.centered-caption
+{
+    top: 40%;
+
+    @include center-middle-captions;
+}
+
+.heading-caption
+{
+    position: relative;
+    top: -10px;
+
+    @include text($headline-font,160%,600,7px,5px,uppercase,1,$color-primary);
+}
+
+.small-sub-heading
+{
+    @include text($text-font,50%,500,12px,5px,uppercase,1,darken($color-secondary,20%));
+    @include xlarge-4k-screen
+    {
+        letter-spacing: 20px;
+    }
+}
+
+.heading-caption-page
+{
+    @include heading-caption-page;
+}
+
+.down
+{
+    @include down;
+}
+
+.btn-1
+{
+    position: relative;
+    top: 30px;
+    left: 40%;
+
+    display: inline-block;
+
+    padding: 20px 63px;
+
+    cursor: pointer;
+
+    .cta-link
+    {
+        font-weight: 300;
+
+        position: relative;
+        z-index: 3;
+
+        opacity: 0;
+
+        @include nav-links;
+    }
+}
+
+.btn-1 .box-1
+{
+    @include svgBox;
+}
+
+.btn-1 .box-1 rect
+{
+    opacity: 1;
+
+    @include svgRect;
+    stroke-dasharray: 517px;
+    stroke-dashoffset: 0;
+}
+
+.btn-1 .box-2
+{
+    @include svgBox;
+}
+
+.btn-1 .box-2 rect
+{
+    opacity: 1;
+
+    @include svgRect;
+    stroke-dasharray: 517px;
+    stroke-dashoffset: 0;
+}
+
+.page-indicator
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: rotate(-90deg);
+    letter-spacing: 1px !important;
+
+    opacity: 1 !important;
+
+    @extend .small-sub-heading;
+}
+
+.page-heading
+{
+    margin-bottom: $margin-bottom-xs;
+
+    opacity: 1 !important;
+    color: $background-color !important;
+
+    @extend .heading-caption;
+}
+
+.bolded
+{
+    @include bolded;
+}
+
+.oversized-caption
+{
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+
+    @include text($headline-font,1400%,700,80px,0px,uppercase,1,$color-secondary);
+}
+
+.blur-effect
+{
+    -webkit-filter: blur(30px);
+}
+
+section{
+  padding:$padding-top 0px;
+}
+
+.practices{
+  list-style-type: none;
+  margin-bottom:$margin-bottom-xs !important;
+  @include text($text-font,80%,300,1px,2px,none,1,$color-primary);
+}
+
+#footer{
+  position:relative;
+  .page-heading{
+    color:$color-primary !important;
+    font-size:90% !important;
+    margin-bottom:$margin-bottom-medium !important;
+  }
+  .line-underneth{
+    position: relative;
+    margin-bottom:$margin-bottom-small;
+    &:after{
+      position: absolute;
+      bottom: -8px;
+      left: 7%;
+      content: '';
+      height: 1px;
+      width: 86%;
+      background: $color-primary;
+    }
+  }
+  .contact-option{
+    @extend .small-text;
+  }
+  .contact-info{
+    @extend .tiny-text;
+    margin-bottom:30px !important;
+    cursor: pointer;
+    &:last-child{
+      margin-bottom:$margin-bottom-large !important;
+    }
+  }
+  .address-info{
+    margin-bottom:0px !important;
+    cursor:default !important;
+  }
+  .btn-1{
+    position: relative;
+    top: 28px;
+    left: -1%;
+    display: inline-block;
+    padding: 20px 77px;
+    cursor: pointer;
+  }
+}
+
+.medium-text{
+  @include text($headline-font,150%,300,1px,2px,none,1,$color-primary);
+}
+
+.small-text{
+  @include text($headline-font,100%,200,1px,2px,none,1,darken($color-secondary,20%));
+}
+
+.tiny-text{
+  @include text($text-font,85%,200,0px,2px,none,1,darken($color-primary,0%));
+}
+
+.headline-font{
+  font-family: $headline-font !important;
+}
+
+.text-font{
+  font-family: $text-font !important;
+}
+
+.grey{
+  color:#878b8f;
+}

@@ -1,0 +1,372 @@
+#about-landing-page
+{
+    width: 100%;
+    height: 100vh;
+    padding: $padding-small 0 !important;
+
+    @include background-image('about-landing-page.png', bottom, cover,$background-color);
+
+    .down
+    {
+        @extend .bigger-font;
+        &:before
+        {
+            position: absolute;
+            top: 50%;
+            left: -110%;
+
+            width: 100%;
+            height: 2px;
+
+            content: '';
+
+            background-color: $color-primary;
+        }
+    }
+}
+
+#about-info-box
+{
+    position: relative;
+
+    background-color: $background-color;
+
+    .btn-1
+    {
+        position: relative;
+        top: 30px;
+        left: 40%;
+
+        display: inline-block;
+
+        padding: 22px 70px;
+
+        cursor: pointer;
+
+        .cta-link
+        {
+            font-weight: 400 !important;
+
+            position: relative;
+            z-index: 3;
+
+            opacity: 1;
+
+            @include nav-links;
+        }
+    }
+}
+
+#firm-overview
+{
+    position: relative;
+
+    background-color: $color-primary;
+
+    .line
+    {
+        position: absolute;
+        top: 0;
+
+        width: 1px;
+        height: 100%;
+
+        background: lighten($color-secondary,20%);
+    }
+
+    #line1
+    {
+        left: 15%;
+    }
+
+    #line2
+    {
+        left: 50.075%;
+    }
+
+    #line3
+    {
+        left: 90%;
+    }
+
+    .small-sub-heading
+    {
+        margin-bottom: $margin-bottom-large;
+
+        letter-spacing: 1px !important;
+    }
+
+    #one-firm
+    {
+        top: 47%;
+        left: 5%;
+
+        transform: rotate(-90deg);
+
+        opacity: .2;
+    }
+
+    .category
+    {
+        font-size: 160% !important;
+        font-weight: 700 !important;
+
+        letter-spacing: 1px !important;
+        text-transform: none !important;
+
+        color: $background-color !important;
+
+        @extend .heading-caption;
+    }
+
+    .category-description
+    {
+        line-height: 170%;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        @include text($text-font,95%,400,1px,1px,none,1,$background-color);
+    }
+
+    .cd-box
+    {
+        margin-bottom: $margin-bottom-medium;
+        padding-top: 0;
+        padding-bottom: 20px;
+        padding-left: $padding-medium;
+
+        border-left: 2px solid $background-color;
+    }
+}
+
+#areas-of-practice
+{
+    position: relative;
+
+    background: lighten($background-color,9%);
+    .page-heading
+    {
+        margin-bottom: $margin-bottom-med-small;
+
+        color: $color-primary !important;
+    }
+    .heading-caption-page
+    {
+        font-family: $text-font;
+
+        letter-spacing: 1px !important;
+        word-spacing: 1px !important;
+
+        color: $color-secondary !important;
+    }
+    #two
+    {
+        top: 17%;
+        left: 42%;
+
+        opacity: .02;
+    }
+
+    .line
+    {
+        position: absolute;
+        top: 0;
+
+        width: 1px;
+        height: 100%;
+
+        background: darken($color-secondary,65%);
+    }
+
+    #line1
+    {
+        left: 15%;
+    }
+
+    #line2
+    {
+        left: 50.075%;
+    }
+
+    #line3
+    {
+        left: 90%;
+    }
+}
+
+#practice1
+{
+    position: relative;
+    background: $background-color;
+    .category
+    {
+        font-size: 400% !important;
+        font-weight: 700 !important;
+        line-height: 90% !important;
+
+        letter-spacing: 2px !important;
+        text-transform: none !important;
+
+        @extend .heading-caption;
+
+        padding-top:$padding-large !important;
+    }
+
+    .practices-caption{
+      position:relative;
+      @extend .heading-caption;
+      font-size: 150% !important;
+      font-weight: 100 !important;
+
+      letter-spacing: 2px !important;
+      text-transform: none !important;
+
+      margin-bottom:20px;
+
+      &:after{
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 70%;
+        height: 1px;
+        content: '';
+        background: $color-ternary;
+      }
+    }
+
+    #first{
+      top:0%;
+      left:10%;
+      font-size:3000% !important;
+      opacity:.1;
+      font-stretch: ultra-expanded;
+    }
+}
+
+.practice-indicator-box
+{
+    // margin-bottom: $margin-ninety;
+    // padding: $padding-tiny 0 3px 0;
+
+    // background: $color-primary;
+    .practice-indicator
+    {
+        font-family: $headline-font;
+        font-size: 220%;
+        font-style: italic;
+
+        color: $offset-color;
+    }
+}
+
+#practice2
+{
+  .practice-indicator-box
+  {
+    margin-bottom:$margin-ninety !important;
+
+  }
+    position: relative;
+    background: lighten($background-color,9%);
+    .category
+    {
+        font-size: 400% !important;
+        font-weight: 700 !important;
+        line-height: 90% !important;
+
+        letter-spacing: 2px !important;
+        text-transform: none !important;
+
+        @extend .heading-caption;
+
+        padding-top:$padding-medium !important;
+    }
+
+    .practices-caption{
+      position:relative;
+      @extend .heading-caption;
+      font-size: 150% !important;
+      font-weight: 100 !important;
+
+      letter-spacing: 2px !important;
+      text-transform: none !important;
+
+      margin-bottom:20px !important;
+
+      &:after{
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 70%;
+        height: 1px;
+        content: '';
+        background: $color-ternary;
+      }
+    }
+    #second{
+      top:0%;
+      left:10%;
+      font-size:3000% !important;
+      opacity:.03;
+      font-stretch: ultra-expanded;
+      margin:0px !important;
+      padding:0px !important;
+    }
+}
+
+#language
+{
+    position: relative;
+
+    background: lighten($background-color,100%);
+    .page-heading
+    {
+        margin-bottom: $margin-bottom-med-small;
+
+        // color: $color-primary !important;
+    }
+    .heading-caption-page
+    {
+        font-family: $text-font;
+        font-weight:300 !important;
+
+        letter-spacing: 1px !important;
+        word-spacing: 1px !important;
+
+        color: $background-color !important;
+    }
+    #two
+    {
+        top: 17%;
+        left: 42%;
+
+        opacity: .02;
+    }
+
+    .line
+    {
+        position: absolute;
+        top: 0;
+
+        width: 1px;
+        height: 100%;
+
+        background: darken($color-secondary,65%);
+    }
+
+    #line1
+    {
+        left: 15%;
+    }
+
+    #line2
+    {
+        left: 50.075%;
+    }
+
+    #line3
+    {
+        left: 90%;
+    }
+}

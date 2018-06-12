@@ -1,0 +1,11 @@
+{
+  "name": "cervinibhatti-webdevelopment",
+  "version": "1.0.0",
+  "description": "old site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Designs by Harp",
+  "license": "ISC"
+}

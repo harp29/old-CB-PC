@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'mixins';
+
+#loading-page{
+  background-color:$background-color;
+  height:100vh;
+  width:100%;
+  visibility:visible;
+  opacity:1;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.loading-captions
+{
+    @include center-middle-captions;
+}
+
+#small-sub-heading{
+  opacity:0;
+}
